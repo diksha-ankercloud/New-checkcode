@@ -115,7 +115,7 @@ def clean_query(query):
     pattern = r'\b(?:' + '|'.join(re.escape(word) for word in questioning_words) + r')\b'
     cleaned_query = re.sub(pattern, '', query, flags=re.IGNORECASE)
     return ' '.join(cleaned_query.split())
-
+#novotech only fassade code
 def detect_language(text):    #preliminary detection of language function
     try:
         return detect(text)
